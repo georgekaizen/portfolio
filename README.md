@@ -17,9 +17,9 @@ git add .
 git commit -m "Your commit message describing the changes"
 ```
 
-### Step 3: Push to GitHub (Master Branch)
+### Step 3: Push to GitHub (Main Branch)
 ```bash
-git push origin master
+git push origin main
 ```
 
 ### Step 4: Build and Deploy to GitHub Pages
@@ -34,7 +34,7 @@ This will automatically:
 
 ### Quick Deploy (All Steps Combined)
 ```bash
-git add . && git commit -m "Update portfolio" && git push origin master && npm run deploy
+git add . && git commit -m "Update portfolio" && git push origin main && npm run deploy
 ```
 
 **Note:** Always clear your browser cache (Ctrl+Shift+Delete or Cmd+Shift+Delete) or open in Incognito mode to see the latest changes immediately.
