@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.1656321e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.1656321e.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.c7d54c4c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c7d54c4c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f1eb3d56.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f1eb3d56.js.map",
     "static/js/2.1704de93.chunk.js": "/portfolio/static/js/2.1704de93.chunk.js",
@@ -16,13 +16,17 @@
     "static/media/ETL_process.74a0f224.png": "/portfolio/static/media/ETL_process.74a0f224.png",
     "static/media/FeaturesDataQualityTools.53fb5865.png": "/portfolio/static/media/FeaturesDataQualityTools.53fb5865.png",
     "static/media/about.e2ebed3e.jpg": "/portfolio/static/media/about.e2ebed3e.jpg",
+    "static/media/appium.1982dff1.png": "/portfolio/static/media/appium.1982dff1.png",
+    "static/media/banckassurance.b0a0e4e7.png": "/portfolio/static/media/banckassurance.b0a0e4e7.png",
     "static/media/docker_kubernetes.be4c37e6.png": "/portfolio/static/media/docker_kubernetes.be4c37e6.png",
+    "static/media/flexpay.4dfdb94e.png": "/portfolio/static/media/flexpay.4dfdb94e.png",
     "static/media/logo512.58bf7b1a.png": "/portfolio/static/media/logo512.58bf7b1a.png",
+    "static/media/performancetesting.fa63c425.png": "/portfolio/static/media/performancetesting.fa63c425.png",
     "static/media/robotic_process_automation.0261873f.png": "/portfolio/static/media/robotic_process_automation.0261873f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f1eb3d56.js",
     "static/js/2.1704de93.chunk.js",
-    "static/js/main.1656321e.chunk.js"
+    "static/js/main.c7d54c4c.chunk.js"
   ]
 }
