@@ -16,13 +16,17 @@ import ETLImage from "./images/ETL_process.png";
 import DockerK8sImage from "./images/docker_kubernetes.png";
 import RPAImage from "./images/robotic_process_automation.png";
 import DataQualityImage from "./images/FeaturesDataQualityTools.png";
+import AppiumImage from "./images/appium.png";
+import BanckassuranceImage from "./images/banckassurance.png";
+import FlexpayImage from "./images/flexpay.png";
+import PerformanceTestingImage from "./images/performancetesting.png";
 
 
 export const ProjectState = () => {
   return [
     {
         title: "Bancassurance Products QA",
-        mainImg: QAImage,
+        mainImg: BanckassuranceImage,
         secondaryImg: DataQualityImage,
         url: "/projects/bancassurance-products",
         expertiseAreas: ["qa-engineer", "data-quality"],
@@ -49,7 +53,7 @@ export const ProjectState = () => {
       },
       {
         title: "Performance Testing Framework - Safaricom",
-        mainImg: RPAImage,
+        mainImg: PerformanceTestingImage,
         secondaryImg: QAImage,
         url: "/projects/performance-testing-safaricom",
         expertiseAreas: ["qa-engineer"],
@@ -140,7 +144,7 @@ export const ProjectState = () => {
       },
       {
         title: "Mobile Test Automation with Appium",
-        mainImg: RPAImage,
+        mainImg: AppiumImage,
         secondaryImg: QAImage,
         url: "/projects/mobile-automation",
         expertiseAreas: ["qa-engineer"],
@@ -196,7 +200,7 @@ export const ProjectState = () => {
       },
       {
         title: "Flexpay Payment Gateway",
-        mainImg: DataQualityImage,
+        mainImg: FlexpayImage,
         secondaryImg: QAImage,
         url: "/projects/flexpay-gateway",
         expertiseAreas: ["qa-engineer", "api-developer"],
@@ -261,34 +265,6 @@ export const ProjectState = () => {
             description: "https://pulmonaryclinicpc.com"
           }
         ],
-      },
-      {
-        title: "ERP Microservices Architecture",
-        mainImg: DockerK8sImage,
-        secondaryImg: ETLImage,
-        url: "/projects/erp-microservices",
-        expertiseAreas: ["api-developer"],
-        technologies: ["Java", "Spring Boot", "Hibernate", "Docker", "Jenkins", "JUnit"],
-        role: "Junior Software Developer",
-        detailDescription: <p>
-          <p>Developed and maintained ERP modules with RESTful Microservices architecture using Spring Boot and containerized deployment at Parity Information Systems.</p>
-          <h3>Key Responsibilities</h3>
-          <ul>
-            <li>Developed ERP modules for inventory and customer management</li>
-            <li>Designed and implemented RESTful Microservices using Spring Boot and Hibernate</li>
-            <li>Containerized services using Docker for improved deployment consistency</li>
-            <li>Integrated services through API Gateway and Spring Cloud</li>
-            <li>Wrote unit and integration tests using JUnit and Mockito</li>
-          </ul>
-          <h3>Achievements</h3>
-          <ul>
-            <li><strong>Reduced system response time by 40%</strong> through SQL query optimization</li>
-            <li>Improved deployment consistency and scalability through Docker containerization</li>
-            <li>Enhanced code quality and reduced defects through comprehensive testing</li>
-            <li>Gained hands-on experience in Agile development practices</li>
-          </ul>
-        </p>,
-        links: [],
       },
   ];
 };

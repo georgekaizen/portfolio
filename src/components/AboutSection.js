@@ -17,15 +17,15 @@ const AboutSection = () => {
       <StyledDescription>
         <motion.div className="title">
           <StyledHide>
-            <motion.h2 variants={titleAnim}>Hello, I am George Njau Ngugi</motion.h2>
+            <motion.h2 variants={titleAnim}>Hello, I'm George Njau Ngugi</motion.h2>
           </StyledHide>
           <StyledHide>
             <motion.h2 variants={titleAnim}>
-              <span>Data-Driven QA Leader</span> &
+              <span>Senior SDET & QA Engineering Leader</span>
             </motion.h2>
           </StyledHide>
           <StyledHide>
-            <motion.h2 variants={titleAnim}>Software Quality Strategist</motion.h2>
+            <motion.h2 variants={titleAnim}>Data Scientist | Test Automation Architect</motion.h2>
           </StyledHide>
         </motion.div>
         <motion.p variants={fade}>
