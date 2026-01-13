@@ -24,11 +24,14 @@ export const experienceData = {
       ]
     },
     achievements: [
-      { metric: "35%", description: "Defect Reduction", detail: "Through comprehensive test strategies" },
-      { metric: "40%", description: "Cost Reduction", detail: "Optimized testing without compromising quality" },
-      { metric: "8-12", description: "Team Members Led", detail: "With 90% retention rate" },
-      { metric: "95%", description: "Sprint Completion", detail: "Average rate across 3 agile teams" },
-      { metric: "$500K", description: "Annual Budget Managed", detail: "Optimized tool investments and vendor relationships" }
+      { metric: "65%", description: "Critical Bugs Reduced", detail: "Through risk-based testing and early defect detection" },
+      { metric: "40%", description: "Testing Costs Cut", detail: "Tool optimization and streamlined processes" },
+      { metric: "90%", description: "Test Coverage Increase", detail: "Improving release confidence" },
+      { metric: "12", description: "Team Members Led", detail: "With 90% retention rate" },
+      { metric: "95%", description: "Sprint Completion", detail: "Average rate across 3 agile teams as Assistant Scrum Master" },
+      { metric: "$500K", description: "Annual Budget Managed", detail: "Optimized tool investments and vendor relationships" },
+      { metric: "98%", description: "Deployment Success", detail: "Improved from 82% through automated quality gates" },
+      { metric: "95%", description: "Automation Coverage", detail: "Achieved using Jenkins, GitLab, and Appium" }
     ],
     skills: {
       leadership: [
@@ -100,7 +103,58 @@ export const experienceData = {
         technologies: ["Rainforest QA", "Chrome Extension Testing", "UI/UX Testing"]
       }
     ],
-    notableProjects: []
+    notableProjects: [
+      {
+        title: "Microservices Migration & Enterprise Data Pipeline",
+        company: "Copia Global",
+        period: "Nov 2022 - June 2023",
+        description: "Led comprehensive QA strategy for company-wide transformation from monolithic to microservices architecture, managing team of 12 QA engineers.",
+        achievements: [
+          "Reduced critical production bugs by 65% through risk-based testing and early defect detection",
+          "Improved deployment success rates from 82% to 98% through automated quality gates",
+          "Achieved 95% automation coverage using Jenkins, GitLab, and Appium for mobile testing",
+          "Decreased testing costs by 40% through tool optimization and streamlined processes",
+          "Increased test coverage by 90%, improving release confidence across all services",
+          "Led recruitment, mentoring, and growth programs achieving 90% team retention",
+          "Supported 3 agile teams as Assistant Scrum Master, reaching 95% sprint completion rate",
+          "Managed $500K QA budget, optimizing vendor relationships and resource allocation"
+        ],
+        technologies: ["Microservices", "Jenkins", "GitLab", "BDD", "Cucumber", "Python", "Appium", "Docker", "Kubernetes"],
+        impact: "Seamless transition to microservices with minimal defects and high platform reliability"
+      },
+      {
+        title: "CI/CD Pipeline Enhancement & Quality Gates Implementation",
+        company: "Copia Global",
+        period: "Nov 2022 - June 2023",
+        description: "Introduced BDD (Cucumber + Python) and automated quality gates across all deployment pipelines to strengthen QA-development collaboration.",
+        achievements: [
+          "Deployment success rate improved from 82% to 98%",
+          "Reduced deployment time by 75% through Docker and Kubernetes implementation",
+          "Automated quality gates preventing 95% of potential production issues",
+          "Integrated automated testing in CI/CD workflows for consistent quality",
+          "Reduced manual regression cycles by 70% through comprehensive automation",
+          "Established performance testing standards saving $200K annually in infrastructure costs"
+        ],
+        technologies: ["Jenkins", "GitLab CI/CD", "Docker", "Kubernetes", "BDD", "Cucumber", "Python", "Quality Gates"],
+        impact: "Transformed deployment process with automated quality assurance"
+      },
+      {
+        title: "Team Building & QA Excellence Program",
+        company: "Copia Global",
+        period: "Nov 2022 - June 2023",
+        description: "Built and mentored high-performing QA team of 12 engineers, establishing QA best practices and continuous improvement culture.",
+        achievements: [
+          "Recruited and onboarded 8 new QA engineers, growing team from 4 to 12 members",
+          "Achieved 90% team retention through career development and growth programs",
+          "Conducted weekly training sessions on test automation tools and QA methodologies",
+          "Developed comprehensive QA documentation including standards, best practices, and frameworks",
+          "Mentored 5 junior engineers advancing to senior roles within 18 months",
+          "Established QA guild for knowledge sharing across engineering organization"
+        ],
+        technologies: ["Team Leadership", "Mentoring", "QA Best Practices", "Documentation", "Training Programs"],
+        impact: "Created sustainable QA organization with strong technical capabilities"
+      }
+    ]
   },
 
   [expertiseAreas.QA_ENGINEER]: {

@@ -64,11 +64,32 @@ const StyledHeadLine = styled.div`
         top: 10%;
         left: 50%;
         transform: translate(-50%, -10%);
+        z-index: 2;
+        background: rgba(26, 35, 50, 0.85);
+        padding: 1rem 2rem;
+        border-radius: 8px;
     }
     img{
         width: 100%;
-        height: 100%;
-        //object-fit: cover;
+        height: 70vh;
+        object-fit: contain;
+        background: #0d1117;
+        border-radius: 8px;
+        padding: 2rem;
+    }
+
+    @media (max-width: 1300px){
+        padding-top: 10vh;
+        img {
+            height: 50vh;
+            padding: 1rem;
+        }
+        h2 {
+            position: static;
+            transform: none;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
     }
 `;
 const StyledDescription = styled.div `
@@ -102,10 +123,12 @@ const StyledLinks = styled.div`
     justify-content: space-around;
     @media (max-width: 1300px){
         display: block;
-        margin: 2rem 2rem;        
+        margin: 2rem 2rem;
     }
     img {
-        height: 30vh;
+        max-height: 30vh;
+        width: 100%;
+        object-fit: contain;
     }
 `;
 
@@ -127,10 +150,25 @@ const StyledLink = styled.div`
 
 const ImageDisplay = styled.div`
     min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d1117;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 5rem;
+
     img {
         width: 100%;
-        height: 100vh;
-        object-fit: cover;
+        max-height: 70vh;
+        object-fit: contain;
+    }
+
+    @media (max-width: 1300px){
+        padding: 1rem;
+        img {
+            max-height: 50vh;
+        }
     }
 `;
 

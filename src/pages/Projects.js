@@ -148,13 +148,15 @@ const StyledProject = styled(motion.div)`
     img {
         width: 100%;
         height: 300px;
-        object-fit: cover;
+        object-fit: contain;
+        background: #0d1117;
         border-radius: 8px;
         transition: transform 0.3s ease;
         cursor: pointer;
+        padding: 1rem;
 
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.02);
         }
     }
 
