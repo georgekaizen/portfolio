@@ -71,6 +71,18 @@ const Projects = () => {
                                         ))}
                                     </Technologies>
                                 )}
+
+                                {project.achievementHighlights && project.achievementHighlights.length > 0 && (
+                                    <AchievementsBox variants={fade}>
+                                        <AchievementTitle>Key Achievements</AchievementTitle>
+                                        {project.achievementHighlights.map((achievement, i) => (
+                                            <Achievement key={i}>
+                                                <CheckIcon>✓</CheckIcon>
+                                                <AchievementText>{achievement}</AchievementText>
+                                            </Achievement>
+                                        ))}
+                                    </AchievementsBox>
+                                )}
                             </StyledProject>
                         ))
                     ) : (
@@ -213,6 +225,56 @@ const EmptyState = styled.div`
         font-size: 1.5rem;
         color: #ccc;
     }
+`;
+
+const AchievementsBox = styled(motion.div)`
+    background: rgba(0, 188, 212, 0.05);
+    border-left: 3px solid #00BCD4;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+`;
+
+const AchievementTitle = styled.h4`
+    color: #00BCD4;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+`;
+
+const Achievement = styled.div`
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+`;
+
+const CheckIcon = styled.span`
+    color: #00BCD4;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 188, 212, 0.2);
+    border-radius: 50%;
+`;
+
+const AchievementText = styled.span`
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex: 1;
 `;
 
 export default Projects;

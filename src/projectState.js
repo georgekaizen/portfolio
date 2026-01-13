@@ -32,6 +32,10 @@ export const ProjectState = () => {
         expertiseAreas: ["qa-engineer", "data-quality"],
         technologies: ["T24", "TurnQuest", "Manual Testing", "Regression Testing", "UAT"],
         role: "Senior QA Engineer",
+        achievementHighlights: [
+          "Reduced post-production defects by 45% through structured test planning",
+          "Accelerated policy issuance turnaround time by 30%"
+        ],
         detailDescription: <p>
           <p>Led end-to-end quality engineering for Bancassurance products covering Motor Insurance (Third Party & Comprehensive), Personal Accident, and Last Expense products at KCB Bank.</p>
           <h3>Key Responsibilities</h3>
@@ -56,9 +60,13 @@ export const ProjectState = () => {
         mainImg: PerformanceTestingImage,
         secondaryImg: QAImage,
         url: "/projects/performance-testing-safaricom",
-        expertiseAreas: ["qa-engineer"],
+        expertiseAreas: ["qa-engineer", "ai-specialist"],
         technologies: ["JMeter", "K6", "Chaos Engineering", "Performance Testing", "Grafana", "InfluxDB"],
         role: "Senior SDET Engineer",
+        achievementHighlights: [
+          "Achieved 99.9% uptime for critical payment systems during peak loads of 100,000+ concurrent users",
+          "Reduced performance-related incidents by 60% through AI-powered proactive monitoring"
+        ],
         detailDescription: <p>
           <p>Developed comprehensive performance testing frameworks at Safaricom using Apache JMeter and K6 to ensure system resilience and optimal performance under high load conditions. Led the implementation of modern performance testing infrastructure that could handle millions of concurrent users.</p>
 
@@ -122,6 +130,10 @@ export const ProjectState = () => {
         expertiseAreas: ["engineering-manager", "data-quality"],
         technologies: ["Microservices", "Jenkins", "GitLab", "BDD", "Cucumber", "Python"],
         role: "QA Manager",
+        achievementHighlights: [
+          "Reduced critical production bugs by 65% through risk-based testing strategies",
+          "Improved deployment success rates from 82% to 98% with automated quality gates"
+        ],
         detailDescription: <p>
           <p>Led comprehensive QA strategy for Microservices Migration and Enterprise Data Pipeline at Copia Global, managing team of 12 QA engineers.</p>
           <h3>Key Responsibilities</h3>
@@ -150,6 +162,10 @@ export const ProjectState = () => {
         expertiseAreas: ["qa-engineer"],
         technologies: ["Appium", "Selenium", "Python", "Java", "Robot Framework"],
         role: "Software Automation Engineer",
+        achievementHighlights: [
+          "Saved 2 working days in testing effort through comprehensive Appium automation framework",
+          "Reduced deployment time by 75% through Docker and Kubernetes implementation"
+        ],
         detailDescription: <p>
           <p>Created comprehensive Appium framework for automation of 3 mobile applications at Copia Kenya, facilitating regression testing and saving significant testing effort.</p>
           <h3>Key Responsibilities</h3>
@@ -175,9 +191,13 @@ export const ProjectState = () => {
         mainImg: ETLImage,
         secondaryImg: DataQualityImage,
         url: "/projects/etl-data-warehouse",
-        expertiseAreas: ["data-quality", "api-developer"],
+        expertiseAreas: ["data-quality", "api-developer", "ai-specialist"],
         technologies: ["Apache Airflow", "Snowflake", "Apache NiFi", "SQL", "Python"],
         role: "Software Automation Engineer",
+        achievementHighlights: [
+          "Ensured 99.9% data accuracy through AI-powered integrated quality checks",
+          "Reduced data processing time by 70% through ML-optimized parallel processing"
+        ],
         detailDescription: <p>
           <p>Designed and implemented ETL workflows using Apache Airflow and built centralized data warehousing solutions in Snowflake for test results and user metrics at Copia Kenya.</p>
           <h3>Key Responsibilities</h3>
@@ -206,6 +226,10 @@ export const ProjectState = () => {
         expertiseAreas: ["qa-engineer", "api-developer"],
         technologies: ["Python", "JMeter", "Selenium", "Katalon Studio", "PostgreSQL"],
         role: "Lead QA Engineer",
+        achievementHighlights: [
+          "Processing 50,000+ daily transactions reliably with 99.9% uptime",
+          "Reduced payment processing errors by 75% through automated testing"
+        ],
         detailDescription: <p>
           <p>Architected and launched the Flexpay Payment Gateway processing 50,000+ daily transactions, with comprehensive performance testing and automation.</p>
           <h3>Key Responsibilities</h3>
@@ -237,6 +261,10 @@ export const ProjectState = () => {
         expertiseAreas: ["api-developer"],
         technologies: ["WordPress", "Bootstrap", "MySQL", "PHP", "Jira"],
         role: "Software Developer & QA",
+        achievementHighlights: [
+          "Delivered 60% improvement in page load times through performance optimization",
+          "Reduced maintenance costs by 40% through custom plugin development"
+        ],
         detailDescription: <p>
           <p>Developed responsive, enterprise-grade healthcare portals with secure MySQL backends for C.W. William Community Health Care and Pulmonary Clinic.</p>
           <h3>Key Responsibilities</h3>
