@@ -20,6 +20,9 @@ export const ProjectState = () => {
       mainImg: CE,
       secondaryImg: CE2,
       url: "/projects/currency-exchange",
+      expertiseAreas: ["api-developer", "qa-engineer"],
+      technologies: ["Python", "Flask", "PostgreSQL", "Heroku", "Bootstrap"],
+      role: "Full-stack Developer & QA",
       detailDescription: <p> 
         <p> A Python-Flask Application that implements a currency exchange function using a currency conversion API that updates regularly. </p>
         <h3> Setup Instructions </h3>
@@ -121,7 +124,7 @@ export const ProjectState = () => {
         {
           title: "Github Repository Link",
           description:
-          <a href = "https://github.com/deepeters/currency-exchange-app" target = "_blank" rel = "noopener noreferrer">
+          <a href = "https://github.com/georgeKaizen/currency-exchange-app" target = "_blank" rel = "noopener noreferrer">
             <img src= {gitrepo} alt="Github Icon" />
           </a>
         },
@@ -132,6 +135,9 @@ export const ProjectState = () => {
         mainImg: MA,
         secondaryImg: MA2,
         url: "/projects/music-application",
+        expertiseAreas: ["api-developer"],
+        technologies: ["React", "JavaScript", "Music API"],
+        role: "Frontend Developer",
         detailDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, totam?",
         links: [
           {
@@ -157,6 +163,9 @@ export const ProjectState = () => {
         mainImg: DF,
         secondaryImg: DF2,
         url: "/projects/douglas-fir",
+        expertiseAreas: ["api-developer", "qa-engineer"],
+        technologies: ["Python", "Flask", "Testing"],
+        role: "Developer & QA Engineer",
         detailDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, totam?",
         links: [
           {

@@ -1,18 +1,18 @@
-# Dennis Njenga Portfolio Website
+# George Njau Ngugi  Portfolio Website
 
 ### Description
-A portfolio web application made in React JS to display my qualifications, skills, education and experience among many other attributes that make me a Software Engineer.
+A portfolio web application made in React JS to display my qualifications, skills, education and experience among many other attributes that makes me a senior Software Engineer, Data Engineer and QA Engineer
 
 ## Contact Me
 
 ### LinkedIn
-    https://www.linkedin.com/in/deepeters/
+    https://www.linkedin.com/in/george-njau-ngugi/
 ### Github
-    https://github.com/deepeters
+    https://github.com/georgeKaizen
 ### Email
-    Dennis Njenga on Gmail: dpnjenga@gmail.com
+    George Njau Ngugi  on Gmail: georgenjau023@gmail.com
 
-<img src="images/DennisPortfolio.png">
+<img src="images/George Njau NgugiPortfolio.png">
 
-### LICENSE: [MIT LICENSE](https://raw.githubusercontent.com/deepeters/dennis.github.io/master/LICENSE)
+### LICENSE: 
 

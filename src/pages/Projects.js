@@ -1,205 +1,216 @@
-import React from 'react';
-
+import React, { useState, useMemo } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-
-//Images
-
-import african from '../images/african.png'; 
-import job from '../images/job-seeker.png'; 
-import github from '../images/github.png'; 
-import currency from '../images/currency.png'; 
-import lion from '../images/lion.png'; 
-import music from '../images/music.png'; 
-import shopping from '../images/online-shopping.png'; 
-import pizza from '../images/pizza.png'; 
-import studio from '../images/studio.png'; 
-import quotes from '../images/quotes.png'; 
-
-//Animations
-import {motion} from "framer-motion";
-import { pageAnimation } from '../animation';
-import { fade, photoAnim, lineAnim } from '../animation';
-//import { useScroll } from '../components/useScroll';
-
-
+import { motion, AnimatePresence } from 'framer-motion';
+import { pageAnimation, fade, photoAnim, lineAnim } from '../animation';
+import { ProjectState } from '../projectState';
+import { getAllExpertiseAreas } from '../data/experienceState';
+import FilterBar from '../components/shared/FilterBar';
 
 const Projects = () => {
+    const [activeFilter, setActiveFilter] = useState('all');
+    const allProjects = ProjectState();
+    const expertiseAreas = getAllExpertiseAreas();
 
-    // const [element, controls] = useScroll();
-    // const [element2, controls2] = useScroll();
+    // Filter projects based on active filter
+    const filteredProjects = useMemo(() => {
+        if (activeFilter === 'all') {
+            return allProjects;
+        }
+        return allProjects.filter(project =>
+            project.expertiseAreas && project.expertiseAreas.includes(activeFilter)
+        );
+    }, [activeFilter, allProjects]);
 
-    return(
-        <StyledProjects 
-            //style = {{ background: "#fff" }} 
-            exit = "exit" 
-            variants = { pageAnimation } 
-            initial = "hidden" 
-            animate = "show" 
+    return (
+        <StyledProjects
+            exit="exit"
+            variants={pageAnimation}
+            initial="hidden"
+            animate="show"
         >
-            {/* <motion.div variants = { sliderContainer }> 
-                <Frame1 variants = { slider }> </Frame1>
-                <Frame2 variants = { slider }> </Frame2>
-                <Frame3 variants = { slider }> </Frame3>
-                <Frame4 variants = { slider }> </Frame4>
-            </motion.div> */}
-            
+            <ProjectsHeader>
+                <motion.h1 variants={fade}>My Projects</motion.h1>
+                <motion.p variants={fade}>
+                    Explore my work across different areas of expertise
+                </motion.p>
+            </ProjectsHeader>
 
-                <StyledProject>
-                    
-                    <motion.h2 variants = { fade }>Currency Exchange</motion.h2>
-                    <motion.div variants = { lineAnim } className="line"></motion.div>
-                    <Link to = "/projects/currency-exchange">
-                        <Hide> 
-                            <motion.img variants = { photoAnim } src={currency} alt="Screenshot of Currency Exchange home page"/>
-                        </Hide>
-                    </Link>
-                </StyledProject>
-                
-                <StyledProject >
-                    <motion.h2 variants = { fade }>Music Application</motion.h2>
-                    <motion.div variants = { lineAnim } className="line"></motion.div>
-                    <Link to = "/projects/music-application">
-                        <motion.img variants = { photoAnim } src={music} alt="Screenshot of Music Application home page"/>
-                    </Link>
-                </StyledProject>
+            <FilterBar
+                filters={expertiseAreas}
+                activeFilter={activeFilter}
+                onFilterChange={setActiveFilter}
+            />
 
-                <StyledProject >
-                    <motion.h2 variants = { fade }>Douglas Fir</motion.h2>
-                    <motion.div variants = { lineAnim } className="line"></motion.div>
-                    <Link to = "/projects/douglas-fir">
-                        <motion.img variants = { photoAnim } src={lion} alt="Screenshot of Douglas Fir home page"/>
-                    </Link>
-                </StyledProject>
+            <AnimatePresence mode="wait">
+                <ProjectsGrid key={activeFilter}>
+                    {filteredProjects.length > 0 ? (
+                        filteredProjects.map((project, index) => (
+                            <StyledProject key={project.url}>
+                                <motion.h2 variants={fade}>{project.title}</motion.h2>
+                                <motion.div variants={lineAnim} className="line"></motion.div>
 
-                <StyledProject>
-                    <motion.h2 variants = { fade }>Quotes Application</motion.h2>
-                    <motion.div variants = { lineAnim } className="line"></motion.div>
-                    <Link to = "/projects/quotes-app">
-                        <Hide> 
-                            <motion.img variants = { photoAnim } src={quotes} alt="Screenshot of Currency Exchange home page"/>
-                        </Hide>
-                    </Link>
-                </StyledProject>
-                
-                <StyledProject >
-                    <motion.h2 variants = { fade }>Pizza Place</motion.h2>
-                    <motion.div variants = { lineAnim } className="line"></motion.div>
-                    <Link to = "/projects/pizza-place">
-                        <motion.img variants = { photoAnim } src={pizza} alt="Screenshot of Music Application home page"/>
-                    </Link>
-                </StyledProject>
+                                {project.role && (
+                                    <Role variants={fade}>{project.role}</Role>
+                                )}
 
-                <StyledProject >
-                    <motion.h2 variants = { fade }>Github Search</motion.h2>
-                    <motion.div variants = { lineAnim } className="line"></motion.div>
-                    <Link to = "/projects/github-search">
-                        <motion.img variants = { photoAnim } src={github} alt="Screenshot of Douglas Fir home page"/>
-                    </Link>
-                </StyledProject>
+                                <Link to={project.url}>
+                                    <Hide>
+                                        <motion.img
+                                            variants={photoAnim}
+                                            src={project.mainImg}
+                                            alt={`${project.title} screenshot`}
+                                        />
+                                    </Hide>
+                                </Link>
 
-                <StyledProject>
-                    <motion.h2 variants = { fade }>Akan Names</motion.h2>
-                    <motion.div variants = { lineAnim } className="line"></motion.div>
-                    <Link to = "/projects/akan-names">
-                        <Hide> 
-                            <motion.img variants = { photoAnim } src={african} alt="Screenshot of Currency Exchange home page"/>
-                        </Hide>
-                    </Link>
-                </StyledProject>
-                
-                <StyledProject >
-                    <motion.h2 variants = { fade }>Delani Studio</motion.h2>
-                    <motion.div variants = { lineAnim } className="line"></motion.div>
-                    <Link to = "/projects/delani-studio">
-                        <motion.img variants = { photoAnim } src={studio} alt="Screenshot of Music Application home page"/>
-                    </Link>
-                </StyledProject>
-
-                <StyledProject>
-                    <motion.h2 variants = { fade }>Job Search</motion.h2>
-                    <motion.div variants = { lineAnim } className="line"></motion.div>
-                    <Link to = "/projects/job-search">
-                        <motion.img variants = { photoAnim } src={job} alt="Screenshot of Douglas Fir home page"/>
-                    </Link>
-                </StyledProject>
-
-                <StyledProject>
-                    <motion.h2 variants = { fade }>Shopping App</motion.h2>
-                    <motion.div variants = { lineAnim } className="line"></motion.div>
-                    <Link to = "/projects/shopping-app">
-                        <Hide> 
-                            <motion.img variants = { photoAnim } src={shopping} alt="Screenshot of Currency Exchange home page"/>
-                        </Hide>
-                    </Link>
-                </StyledProject>
-
+                                {project.technologies && project.technologies.length > 0 && (
+                                    <Technologies variants={fade}>
+                                        {project.technologies.slice(0, 4).map((tech, i) => (
+                                            <TechBadge key={i}>{tech}</TechBadge>
+                                        ))}
+                                    </Technologies>
+                                )}
+                            </StyledProject>
+                        ))
+                    ) : (
+                        <EmptyState>
+                            <motion.p variants={fade}>
+                                No projects found for this expertise area yet.
+                            </motion.p>
+                        </EmptyState>
+                    )}
+                </ProjectsGrid>
+            </AnimatePresence>
         </StyledProjects>
-    )
-}
+    );
+};
 
 const StyledProjects = styled(motion.div)`
     min-height: 100vh;
-    overflow: hidden;
     padding: 5rem 10rem;
+
+    @media (max-width: 1300px) {
+        padding: 2rem 2rem;
+    }
+`;
+
+const ProjectsHeader = styled.div`
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h1 {
+        font-size: 3rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #ccc;
+    }
+
+    @media (max-width: 700px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+`;
+
+const ProjectsGrid = styled(motion.div)`
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    h2 {
-        padding: 1rem 0rem;
-        font-size: 2rem;
-    }
-    @media (max-width: 1300px){
-        padding: 2rem 2rem;        
-    }
+    gap: 3rem;
 `;
 
 const StyledProject = styled(motion.div)`
-    padding-bottom: 10rem;
     flex: 1;
     flex-basis: 30rem;
-    //overflow: hidden;
-    .line {
-        height: 0.5rem;
-        background: #23d997;
-        margin-bottom: 3rem;
-    }
-    img {
-        width: 70%;
-        height: 50%;
-        object-fit: cover;
-    }
+    min-width: 300px;
+
     h2 {
+        padding: 1rem 0rem;
+        font-size: 2rem;
         color: white;
     }
+
+    .line {
+        height: 0.5rem;
+        background: #00BCD4;
+        margin-bottom: 1.5rem;
+        width: 70%;
+    }
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    @media (max-width: 700px) {
+        flex-basis: 100%;
+        min-width: 100%;
+
+        .line {
+            width: 100%;
+        }
+    }
 `;
 
-const Hide = styled.div `
+const Hide = styled.div`
     overflow: hidden;
+    margin-bottom: 1.5rem;
 `;
 
+const Role = styled(motion.p)`
+    color: #00BCD4;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+`;
 
-//Frame Animation
-// const Frame1 = styled(motion.div) `
-//     position: fixed;
-//     left: 0;
-//     top: 10;
-//     width: 100%;
-//     height: 100vh;
-//     background: #fffebf;
-//     z-index: 2;
-// `;
+const Technologies = styled(motion.div)`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+`;
 
-// const Frame2 = styled(Frame1) `
-//     background: #ff8efb;
-// `;
+const TechBadge = styled.span`
+    background: transparent;
+    border: 1px solid #00BCD4;
+    color: #00BCD4;
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
 
-// const Frame3 = styled(Frame1) `
-//     background: #8ed2ff;
-// `;
+    &:hover {
+        background: #00BCD4;
+        color: #1b1b1b;
+    }
+`;
 
-// const Frame4 = styled(Frame1) `
-//     background: #8effa0;
-// `;
+const EmptyState = styled.div`
+    text-align: center;
+    padding: 5rem 2rem;
+    width: 100%;
 
-export default Projects; 
+    p {
+        font-size: 1.5rem;
+        color: #ccc;
+    }
+`;
+
+export default Projects;

@@ -24,7 +24,7 @@ const QuestionsSection = () => {
         Any Questions? <span> FAQs </span>{" "}
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="What is Dennis's TechStack and Skillset?">
+        <Toggle title="What is George Njau Ngugi's TechStack and Skillset?">
           <div className="answer">
             <p>
               <ul>
@@ -63,25 +63,40 @@ const QuestionsSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Which schools has Dennis attended?">
+        <Toggle title="What is George Njau Ngugi's Education Background?">
           <div className="answer">
             <h4>
               {" "}
-              2020 - 2021 || <span> Moringa School </span> || Software Immersive FullStack Development{" "}
+              2023 - 2026 (Ongoing) || <span> University of East London </span> || Master of Science (MSc.) Data Science - Remote{" "}
             </h4>
             <h4>
               {" "}
-              2019 - 2019 || <span> Strathmore University </span> || Information Systems Security & Certified Ethical
-              Hacking (CEHv10){" "}
+              2013 - 2017 || <span> Technical University of Kenya </span> || Bachelor of Technology in Computer Technology (Second-class upper Division){" "}
             </h4>
             <h4>
               {" "}
-              2013 - 2018 || <span> Dedan Kimathi University of Technology </span> || Bachelor of Science (BSc.)
-              Information Technology{" "}
+              <span> St. Paul's University </span> || Certificate in Psychology (Graduated with Distinction - Team leadership and management){" "}
+            </h4>
+            <h4>
+              {" "}
+              2009 - 2012 || <span> Muhoho High School, Kiambu </span> || Kenya Certificate of Secondary Education (Mean grade: B+){" "}
             </h4>
           </div>
         </Toggle>
-        <Toggle title="Where has Dennis worked?">
+        <Toggle title="What Professional Certifications does George Njau Ngugi hold?">
+          <div className="answer">
+            <ul>
+              <li><strong>ISTQB Certified Tester</strong> - International Software Testing Qualifications Board</li>
+              <li><strong>Kubernetes LS250 Engineer</strong> - Container Orchestration and DevOps</li>
+              <li><strong>Project Management Certification</strong> - Agile and Scrum methodologies</li>
+              <li><strong>AWS Data Analysis and Engineering</strong> - Cloud-based data solutions</li>
+              <li><strong>Data Engineering Certificate</strong> - ETL pipelines and data quality</li>
+              <li><strong>AI and SAP Integration Certificate</strong> - Enterprise AI solutions</li>
+              <li><strong>Climate Risk Management Certificate</strong> - Sustainable technology practices</li>
+            </ul>
+          </div>
+        </Toggle>
+        <Toggle title="Where has George Njau Ngugi worked?">
           <div className="answer">
             <h4>
               {" "}
@@ -170,10 +185,27 @@ const QuestionsSection = () => {
           </div>
         </Toggle>
 
-        <Toggle title="Where does Dennis want to work?">
+        <Toggle title="What are George Njau Ngugi's Career Aspirations?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti?</p>
+            <p>
+              <strong>My aspiration is to serve as a CTO (Chief Technology Officer) or CEO (Chief Executive Officer)</strong> where I can leverage
+              my 8+ years of technical depth, leadership experience, and people-first approach to drive organizational excellence.
+            </p>
+            <p>
+              I'm passionate about <strong>solving complex IT problems in the modern AI-driven world</strong>, where data quality, automation,
+              and continuous improvement are critical to business success. I believe in:
+            </p>
+            <ul>
+              <li><strong>Strategic Leadership:</strong> Setting technical vision and aligning technology with business goals</li>
+              <li><strong>People Development:</strong> Building, mentoring, and motivating high-performing teams</li>
+              <li><strong>Innovation & AI:</strong> Leveraging AI, machine learning, and data engineering to solve real-world problems</li>
+              <li><strong>Results-Oriented Approach:</strong> Driving measurable outcomes through quality, automation, and efficiency</li>
+              <li><strong>Kaizen Philosophy:</strong> Fostering a culture of continuous improvement and excellence</li>
+            </ul>
+            <p>
+              Beyond technology, as <strong>Founder and Chairman of Manyaham Limited</strong> (since 2022), I demonstrate my commitment to
+              community leadership, strategic decision-making, and creating social impact through technology.
+            </p>
           </div>
         </Toggle>
       </AnimateSharedLayout>

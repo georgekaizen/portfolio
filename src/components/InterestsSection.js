@@ -34,35 +34,35 @@ const InterestsSection = () => {
                 <img src= {Interests} height = "600" alt="Interests Section" />
             </StyledImage>
             <StyledDescription>
-                <h2>Proffessional <span> Interests </span> </h2>
+                <h2>Core <span> Competencies </span> </h2>
                 <StyledCards>
                     <StyledCard>
                         <div className="icon">
-                            <img src= {AI} height="100" alt="Artificial Intelligence" />
-                            <h3>A.I.</h3>
+                            <img src= {AI} height="100" alt="Data Engineering" />
+                            <h3>Data Eng</h3>
                         </div>
-                        <p>Artificial Intelligence</p>
+                        <p>ETL Pipelines & Data Quality</p>
                     </StyledCard>
                     <StyledCard>
                         <div className="icon">
-                            <img src= {ML} height="100" alt="Machine Learning" />
-                            <h3>M.L.</h3>
+                            <img src= {ML} height="100" alt="QA Leadership" />
+                            <h3>QA Lead</h3>
                         </div>
-                        <p>Machine Learning</p>
+                        <p>Quality Assurance & Testing</p>
                     </StyledCard>
                     <StyledCard>
                         <div className="icon">
-                            <img src= {IS} height="100" alt="Information Security" />
-                            <h3>I.S.</h3>
+                            <img src= {IS} height="100" alt="Leadership" />
+                            <h3>Leadership</h3>
                         </div>
-                        <p>Information Security</p>
+                        <p>Team Development & Strategy</p>
                     </StyledCard>
                     <StyledCard>
                         <div className="icon">
-                            <img src= {AL} height="100" alt="African Literature" />
-                            <h3>A.L.</h3>
+                            <img src= {AL} height="100" alt="Results Oriented" />
+                            <h3>Results</h3>
                         </div>
-                        <p>African Literature</p>
+                        <p>Automation & Optimization</p>
                     </StyledCard>
                 </StyledCards>
             </StyledDescription>

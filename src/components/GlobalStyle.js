@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
         @media (max-width: 1700px){
             font-size: 70%;
         }
-        
+
     }
 
     body {
@@ -26,15 +26,15 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.1.rem;
         cursor: pointer;
         padding: 1rem 2rem;
-        border: 3px solid #23d997;
+        border: 3px solid #00BCD4;
         background: transparent;
         color: white;
         transition: all 0.5s ease;
         font-family: 'Inter', sans-serif;
 
         &:hover {
-            background-color: #23d997;
-            color: white;
+            background-color: #00BCD4;
+            color: #1b1b1b;
         }
     }
     h2 {
@@ -56,10 +56,10 @@ const GlobalStyle = createGlobalStyle`
     }
 
     span {
-        color: #23d997;
+        color: #00BCD4;
         font-weight: bold;
     }
-        
+
     p {
         padding: 3rem 0rem;
         color: #ccc;

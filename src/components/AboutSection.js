@@ -17,34 +17,39 @@ const AboutSection = () => {
       <StyledDescription>
         <motion.div className="title">
           <StyledHide>
-            <motion.h2 variants={titleAnim}>Hello, I am Dennis</motion.h2>
+            <motion.h2 variants={titleAnim}>Hello, I am George Njau Ngugi</motion.h2>
           </StyledHide>
           <StyledHide>
             <motion.h2 variants={titleAnim}>
-              a <span> Software Engineer </span> &
+              <span>Data-Driven QA Leader</span> &
             </motion.h2>
           </StyledHide>
           <StyledHide>
-            <motion.h2 variants={titleAnim}>an African literature enthuthiast</motion.h2>
+            <motion.h2 variants={titleAnim}>Software Quality Strategist</motion.h2>
           </StyledHide>
         </motion.div>
         <motion.p variants={fade}>
           <p>
-            Working in Nairobi City, Kenya, I have around three to four years in software development and contributed to
-            more than thirty open-source application projects to the online community.
+            I am a passionate <strong>Data-driven QA Engineer and QA Lead</strong> with <strong>8+ years of experience</strong> ensuring
+            software quality across web, API, and data-intensive systems. I specialize in <strong>Data QA</strong>, validating ETL pipelines,
+            data accuracy, data consistency, and data integrity using Python and SQL to analyze test results, identify quality risks, and
+            improve testing efficiency.
             <br />
             <br />
-            As a software engineer, I have worked developed, tested, deployed, and maintained solutions ranging from
-            banking, aviation, inventory, payroll, and human resource information management systems among others. I
-            have developed and secured RESTful APIs and Web Services to share intricate resources between application
-            software. Applied the microservice architecture using Spring Boot & ASP.NET and enabled communication,
-            service discovery, fault tolerance, resilience and optimisation. Secured all the components of software on
-            both the application and the network layer and engaged in intensive testing on different levels including
-            unit, functional and integration tests.
+            Guided by <strong>Kaizen</strong> - the principle of continuous improvement - I leverage data analytics and automation to
+            optimize test coverage, reduce defects, and drive excellence. As a <strong>QA Lead/Manager</strong>, I have led teams, defined
+            QA strategies, and collaborated with developers, product managers, and DevOps teams in Agile environments. My expertise spans
+            Python, SQL, Docker, Kubernetes, AWS, CI/CD pipelines, API testing, and test automation frameworks.
             <br />
             <br />
-            As an innovator and solution finder, I have attempted to develop a solution that combines my discreet
-            passion for creative arts, in particular, African literature with technological tools and techniques.
+            Beyond technology, I serve as <strong>Founder and Chairman of Manyaham Limited</strong> (since 2022), leading community
+            initiatives that demonstrate my commitment to strategic leadership and people development. I'm passionate about motivating
+            teams, driving results, and solving complex IT challenges in the modern AI-driven world.
+            <br />
+            <br />
+            <strong>My aspiration:</strong> To serve as a <strong>CTO or CEO</strong> where I can leverage my technical depth, leadership
+            experience, and people-first approach to solve complex IT problems, drive innovation, and inspire teams to achieve excellence
+            in the AI era.
           </p>
         </motion.p>
         <motion.button variants={fade}>
@@ -53,7 +58,7 @@ const AboutSection = () => {
         </motion.button>
       </StyledDescription>
       <StyledImage>
-        <motion.img variants={photoAnim} src={about} alt="Dennis is a portrait" />
+        <motion.img variants={photoAnim} src={about} alt="George Njau Ngugi is a portrait" />
       </StyledImage>
       <Wave />
     </StyledAbout>

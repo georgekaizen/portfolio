@@ -25,19 +25,41 @@ const Contact = () => {
                     <Hide>
                         <Social variants = { titleAnim }>
                             <Circle />
-                            <h2> Send me a Message </h2>
+                            <a href="mailto:georgenjau023@gmail.com">
+                                <h2>georgenjau023@gmail.com</h2>
+                            </a>
                         </Social>
                    </Hide>
                    <Hide>
                         <Social variants = { titleAnim }>
                             <Circle />
-                            <h2> Send me a Message </h2>
+                            <a href="tel:+254720022933">
+                                <h2>+254 (0)720 022 933</h2>
+                            </a>
                         </Social>
                     </Hide>
                     <Hide>
                         <Social variants = { titleAnim }>
                             <Circle />
-                            <h2> Send me a Message </h2>
+                            <a href="https://www.linkedin.com/in/george-njau-522694145/" target="_blank" rel="noopener noreferrer">
+                                <h2>LinkedIn Profile</h2>
+                            </a>
+                        </Social>
+                    </Hide>
+                    <Hide>
+                        <Social variants = { titleAnim }>
+                            <Circle />
+                            <a href="https://github.com/georgekaizen" target="_blank" rel="noopener noreferrer">
+                                <h2>GitHub: @georgekaizen</h2>
+                            </a>
+                        </Social>
+                    </Hide>
+                    <Hide>
+                        <Social variants = { titleAnim }>
+                            <Circle />
+                            <a href="https://georgekaizen.github.io/portfolio" target="_blank" rel="noopener noreferrer">
+                                <h2>View Portfolio</h2>
+                            </a>
                         </Social>
                     </Hide>
                 </div>
@@ -83,6 +105,14 @@ const Social = styled(motion.div)`
     align-items: center;
     h2 {
         margin: 2rem;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s ease;
+        &:hover {
+            color: #00BCD4;
+        }
     }
 `
 
