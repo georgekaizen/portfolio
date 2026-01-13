@@ -100,86 +100,99 @@ const QuestionsSection = () => {
           <div className="answer">
             <h4>
               {" "}
-              2021 – to date || <span> Software Engineer </span> || Kenya Airways PLC{" "}
+              April 2024 – Present || <span> Senior QA Engineer </span> || KCB Bank Assurance{" "}
             </h4>
             <p>
               <ul>
-                <li>Software development for web applications in C#, Java and JavaScript programming languages.</li>
-                <li>Deconstructing large .NET monolith applications to micro services.</li>
-                <li>
-                  Implementing hybrid cloud infrastructure on Azure Cloud in particular migration of complex
-                  infrastructure to Episerver CMS.
-                </li>
-                <li>Automation of deployment processes by building CI/CD pipelines.</li>
-                <li>
-                  Application, design and utilisation of third party APIs such the Safaricom Mpesa B2C, B2B and C2B
-                  payment API as well as other direct payment option integrations.
-                </li>
+                <li>Led end-to-end quality engineering for Bancassurance products (Motor Insurance, Personal Accident, Last Expense)</li>
+                <li>Designed and executed manual, white-box, and black-box test cases across underwriting, policy issuance, claims, and renewals</li>
+                <li>Validated pricing rules, cover limits, and policy schedules for regulatory compliance</li>
+                <li>Performed integration, UAT, and regression testing across T24 and TurnQuest systems</li>
+                <li><strong>Achievement:</strong> Reduced post-production defects by 45% and accelerated policy issuance by 30%</li>
               </ul>
             </p>
 
             <h4>
               {" "}
-              2019 - 2020 || <span> Software Implementation & Support Engineer </span> || List Fintech Solutions Ltd.{" "}
+              June 2023 – March 2024 || <span> Senior SDET Engineer </span> || Andela Inc{" "}
             </h4>
             <p>
               <ul>
-                <li>
-                  {" "}
-                  Managed Citius Core Banking, Agency Banking, Mobile Banking and Internet Banking system applications
-                  in different roles – implementation, testing, migration training etc.{" "}
-                </li>
-                <li> Oracle Database Management. </li>
-                <li>
-                  {" "}
-                  Applied Citius systems on both Cloud Systems and In-premise data centre systems for List global
-                  clients.{" "}
-                </li>
-                <li>
-                  {" "}
-                  User Acceptance Testing and training & Citius Digital Banking Solutions development, maintenance and
-                  support.{" "}
-                </li>
+                <li>Led QA initiatives covering manual, white-box, and black-box testing for system stability</li>
+                <li>Applied Chaos Engineering principles to identify performance bottlenecks and improve system resilience</li>
+                <li>Built centralized QA metrics repository for data-driven quality tracking</li>
+                <li>Designed non-functional tests using JMeter, K6, and security scanning tools</li>
+                <li><strong>Achievement:</strong> Improved system efficiency by 35% and software resilience by 33% at Safaricom</li>
               </ul>
             </p>
 
             <h4>
               {" "}
-              2018 || <span> Software Engineer </span> || Realtime Technologies Ltd.{" "}
+              November 2022 – June 2023 || <span> QA Manager </span> || Copia Global{" "}
             </h4>
             <p>
               <ul>
-                <li> Sybase Database Management. </li>
-                <li> PowerBuilder Application Development. </li>
-                <li> Customer Service. </li>
+                <li>Led quality strategy and managed team of 12 QA engineers driving test automation and CI/CD integration</li>
+                <li>Introduced BDD (Cucumber + Python) to strengthen QA-development collaboration</li>
+                <li>Achieved 95% automation coverage using Jenkins, GitLab, and Appium for mobile testing</li>
+                <li>Designed comprehensive QA strategy covering unit, integration, system, and performance testing</li>
+                <li><strong>Achievement:</strong> Reduced critical bugs by 65%, testing costs by 40%, and improved deployment success from 82% to 98%</li>
               </ul>
             </p>
 
             <h4>
               {" "}
-              2016 || <span> IT Support </span> || Kenya Power Company,{" "}
+              September 2019 – October 2022 || <span> Software Automation Engineer </span> || Copia Kenya{" "}
             </h4>
             <p>
               <ul>
-                <li> Assisted in contracting of customers. </li>
-                <li> Data gathering and processing. </li>
+                <li>Developed automation scripts with Selenium and Katalon Studio for functional and regression tests</li>
+                <li>Implemented CI/CD pipelines and managed automated testing integration</li>
+                <li>Created Appium framework for mobile app automation across 3 applications</li>
+                <li>Built ETL workflows using Apache Airflow and data warehousing in Snowflake</li>
+                <li><strong>Achievement:</strong> Improved efficiency by 10%, reduced deployment time by 75%, and data processing time by 70%</li>
               </ul>
             </p>
 
             <h4>
               {" "}
-              2016 || <span> Management Intern </span> || National Hospital Insurance Fund,{" "}
+              September 2018 – August 2019 || <span> Lead QA Engineer </span> || Flexpay Technology Ltd{" "}
             </h4>
             <p>
               <ul>
-                <li> Capturing of claims, confirming of claims, claims examination and filling. </li>
-                <li>
-                  {" "}
-                  Collaborated with organisation technician that, the computer cluster is functioning efficiently.{" "}
-                </li>
-                <li> Scanning, merging, and printing cards and photo card dispatch. </li>
-                <li> Customer care procedures registration of new members. </li>
-                <li> Accounting and audit procedures. </li>
+                <li>Automated critical test cases using Katalon Studio and Selenium, reaching 85% test coverage</li>
+                <li>Reduced regression testing time from 5 days to 8 hours through automation strategies</li>
+                <li>Integrated data science techniques into QA processes to predict defects</li>
+                <li>Led performance testing for Tuskys.com achieving 99.9% uptime under 100,000 concurrent users</li>
+                <li><strong>Achievement:</strong> Launched Flexpay Payment Gateway processing 50,000+ daily transactions with 75% fewer errors</li>
+              </ul>
+            </p>
+
+            <h4>
+              {" "}
+              January 2018 – August 2018 || <span> Software Developer & QA </span> || Tezza{" "}
+            </h4>
+            <p>
+              <ul>
+                <li>Developed responsive front-end interfaces using Bootstrap and WordPress</li>
+                <li>Architected secure healthcare portals backed by MySQL with focus on data protection</li>
+                <li>Engineered custom WordPress plugins to extend platform functionality</li>
+                <li>Established Jira boards for structured sprint planning and delivery oversight</li>
+                <li><strong>Achievement:</strong> Delivered 60% improvement in page load times and reduced maintenance costs by 40%</li>
+              </ul>
+            </p>
+
+            <h4>
+              {" "}
+              June 2017 – December 2017 || <span> Junior Software Developer </span> || Parity Information Systems{" "}
+            </h4>
+            <p>
+              <ul>
+                <li>Developed ERP modules for inventory and customer management using Java and Spring Framework</li>
+                <li>Designed RESTful Microservices using Spring Boot and Hibernate</li>
+                <li>Containerized services using Docker, improving deployment consistency</li>
+                <li>Wrote unit and integration tests using JUnit and Mockito</li>
+                <li><strong>Achievement:</strong> Reduced system response time by 40% through SQL optimization and code refactoring</li>
               </ul>
             </p>
           </div>

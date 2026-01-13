@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../images/logo512.png';
 
 const Nav = () => {
     const { pathname } = useLocation();
@@ -19,9 +20,9 @@ const Nav = () => {
 
     return (
         <StyledNav>
-            <h1>
-                <Link id="logo" to="/">Portfolio</Link>
-            </h1>
+            <LogoLink to="/">
+                <LogoImage src={logo} alt="George Njau Ngugi Portfolio Logo" />
+            </LogoLink>
             <ul>
                 <li>
                     <Link to="/">ABOUT</Link>
@@ -88,6 +89,21 @@ const Nav = () => {
     );
 };
 
+const LogoLink = styled(Link)`
+    display: flex;
+    align-items: center;
+`;
+
+const LogoImage = styled.img`
+    height: 60px;
+    width: auto;
+
+    @media (max-width: 1300px) {
+        height: 50px;
+        margin: 1rem;
+    }
+`;
+
 const StyledNav = styled.nav`
     min-height: 10vh;
     display: flex;
@@ -113,12 +129,6 @@ const StyledNav = styled.nav`
         align-items: center;
     }
 
-    #logo {
-        font-size: 2.2rem;
-        font-family: 'Lobster', cursive;
-        font-weight: lighter;
-    }
-
     li {
         padding-left: 10rem;
         position: relative;
@@ -128,11 +138,6 @@ const StyledNav = styled.nav`
         flex-direction: column;
         padding: 2rem 1rem;
         width: 100%;
-
-        #logo {
-            display: inline-block;
-            margin: 1rem;
-        }
 
         ul {
             padding: 2rem;
@@ -173,6 +178,8 @@ const DropdownToggle = styled.div`
     cursor: pointer;
     position: relative;
     user-select: none;
+    font-weight: bold;
+    color: white;
 `;
 
 const DropdownMenu = styled(motion.div)`

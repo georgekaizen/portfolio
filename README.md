@@ -1,7 +1,7 @@
-# George Njau Ngugi  Portfolio Website
+# PORTIFOLIO FOR GEORGE NJAU NGUGI
 
 ### Description
-A portfolio web application made in React JS to display my qualifications, skills, education and experience among many other attributes that makes me a senior Software Engineer, Data Engineer and QA Engineer
+A modern, professional portfolio web application built with React JS showcasing my expertise as a Data-driven QA Engineer, QA Lead, and Software Quality Strategist with 8+ years of experience in quality assurance, data engineering, and test automation
 
 ## Contact Me
 

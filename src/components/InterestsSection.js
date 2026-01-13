@@ -1,10 +1,10 @@
 import React from "react";
 
 //import Icons
-import AI from "../images/AI.png";
-import ML from "../images/machine-learning.png";
-import IS from "../images/security.png";
-import AL from "../images/african-woman.png";
+import ETL from "../images/ETL_process.png";
+import DockerK8s from "../images/docker_kubernetes.png";
+import RPA from "../images/robotic_process_automation.png";
+import QA from "../images/DataAnalystQA.png";
 
 //import images
 import Interests from "../images/interests.jpg"
@@ -38,28 +38,28 @@ const InterestsSection = () => {
                 <StyledCards>
                     <StyledCard>
                         <div className="icon">
-                            <img src= {AI} height="100" alt="Data Engineering" />
+                            <img src= {ETL} height="100" alt="Data Engineering" />
                             <h3>Data Eng</h3>
                         </div>
                         <p>ETL Pipelines & Data Quality</p>
                     </StyledCard>
                     <StyledCard>
                         <div className="icon">
-                            <img src= {ML} height="100" alt="QA Leadership" />
+                            <img src= {QA} height="100" alt="QA Leadership" />
                             <h3>QA Lead</h3>
                         </div>
                         <p>Quality Assurance & Testing</p>
                     </StyledCard>
                     <StyledCard>
                         <div className="icon">
-                            <img src= {IS} height="100" alt="Leadership" />
+                            <img src= {DockerK8s} height="100" alt="Leadership" />
                             <h3>Leadership</h3>
                         </div>
                         <p>Team Development & Strategy</p>
                     </StyledCard>
                     <StyledCard>
                         <div className="icon">
-                            <img src= {AL} height="100" alt="Results Oriented" />
+                            <img src= {RPA} height="100" alt="Results Oriented" />
                             <h3>Results</h3>
                         </div>
                         <p>Automation & Optimization</p>
