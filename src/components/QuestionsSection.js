@@ -28,37 +28,65 @@ const QuestionsSection = () => {
           <div className="answer">
             <p>
               <ul>
-                <li>Software immersive full stack development, implementation, testing and support in: </li>
+                <li><strong>API Development & Backend Engineering:</strong></li>
                 <ul>
                   <li>
-                    Java: Developing and Securing RESTful APIs and RESTful Web Services with JAX-RS, development of SOAP
-                    Web Services with JAX-WS, application of the Spring Framework for Enterprise Java applications.,
-                    bootstrapping Spring Applications with Spring Boot MVC, implementation of the Microservice
-                    architecture with Spring Boot including communication and service discovery, fault tolerance,
-                    resilience and configuration and unit testing with Junit 5.{" "}
+                    <strong>Java Spring Boot:</strong> Building RESTful APIs and microservices using Spring Boot, Spring MVC,
+                    Spring Security, and Hibernate. Experience with service discovery, fault tolerance, and unit testing with JUnit 5.
                   </li>
                   <li>
-                    C#: Web development using the .NET (ASP.NET & ASP.NET Core) MVC framework including deconstruction
-                    of regular monolith web applications to micro services and migration to Episerver Content Management
-                    Systems (CMS) 11 & 12
+                    <strong>Python Development:</strong> Backend development with Flask and Django, scripting for automation,
+                    and building ETL pipelines for data processing.
                   </li>
-                  <li>JavaScript: Client side application development with React JS and Angular JS.</li>
-                  <li>Python: End to end application development with Flask and Django.</li>
                 </ul>
-                <li>
-                  {" "}
-                  Database Management; an understanding in structured query language (SQL) including PostgreSQL, Oracle
-                  and MySQL, knowledge of relational database management, object-oriented database management systems
-                  and NoSQL frameworks like Firebase.{" "}
-                </li>
-                <li>
-                  {" "}
-                  Information security comprising user authentication, cryptography, white coat ethical hacking, digital
-                  forensics, penetration testing, logs management, virtualisation, malware reverse engineering, scanning
-                  networks and vulnerability analysis{" "}
-                </li>
-                <li> Familiarity with the Agile Scrum Methodology in Software development and delivery. </li>
-                <li> Version Control Tools, i.e. Git </li>
+                <li><strong>Data Analysis & Data Engineering:</strong></li>
+                <ul>
+                  <li>
+                    <strong>Python Data Stack:</strong> NumPy, Pandas, Matplotlib, and Scikit-learn for data analysis,
+                    visualization, and machine learning applications.
+                  </li>
+                  <li>
+                    <strong>Spatial Data Analysis:</strong> Experience working with geospatial data, location-based analytics,
+                    and GIS-related data processing.
+                  </li>
+                  <li>
+                    <strong>ETL Pipelines & Data Quality:</strong> Designing and implementing ETL workflows using Apache Airflow,
+                    Apache NiFi, and Snowflake. Strong focus on data validation, integrity checks, and quality assurance.
+                  </li>
+                </ul>
+                <li><strong>Test Automation & Quality Engineering:</strong></li>
+                <ul>
+                  <li>
+                    <strong>Selenium WebDriver:</strong> Web application automation, cross-browser testing, and integration with CI/CD pipelines.
+                  </li>
+                  <li>
+                    <strong>Robot Framework:</strong> Keyword-driven test automation for web, API, and database testing.
+                  </li>
+                  <li>
+                    <strong>Appium:</strong> Mobile application automation for Android and iOS platforms.
+                  </li>
+                  <li>
+                    <strong>Performance Testing:</strong> Load and stress testing using JMeter and K6.
+                  </li>
+                </ul>
+                <li><strong>Leadership & Strategic Vision:</strong></li>
+                <ul>
+                  <li>
+                    <strong>Team Leadership:</strong> Led and mentored teams of 8-12 engineers, achieving 90% retention rate
+                    and fostering professional growth through coaching and performance reviews.
+                  </li>
+                  <li>
+                    <strong>Strategic Planning:</strong> Defining QA strategies, roadmaps, and OKR/KPI frameworks aligned
+                    with business objectives.
+                  </li>
+                  <li>
+                    <strong>Vision Carrier:</strong> Driving organizational excellence through continuous improvement (Kaizen),
+                    innovation, and data-driven decision making.
+                  </li>
+                </ul>
+                <li><strong>DevOps & Infrastructure:</strong> Docker, Kubernetes, Jenkins, GitLab CI/CD, AWS</li>
+                <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Oracle, Snowflake</li>
+                <li><strong>Methodologies:</strong> Agile/Scrum, BDD (Cucumber), TDD, Risk-based Testing</li>
               </ul>
             </p>
           </div>

@@ -2,7 +2,6 @@ import React from 'react';
 
 //Page Components
 import AboutSection from '../components/AboutSection';
-import InterestsSection from '../components/InterestsSection';
 import QuestionsSection from '../components/QuestionsSection';
 
 //Animations
@@ -14,7 +13,6 @@ const About = () => {
     return (
         <motion.div exit = "exit" variants = { pageAnimation } initial = "hidden" animate = "show">
             < AboutSection />
-            < InterestsSection />
             < QuestionsSection />
         </motion.div>
     )

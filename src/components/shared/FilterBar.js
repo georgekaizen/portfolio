@@ -12,11 +12,16 @@ const FilterBar = ({ filters, activeFilter, onFilterChange }) => {
         'ai-specialist': 'AI Specialist'
     };
 
+    // All filters now show all projects when clicked
+    const handleFilterClick = () => {
+        onFilterChange('all');
+    };
+
     return (
         <FilterContainer>
             <FilterButton
-                onClick={() => onFilterChange('all')}
-                className={activeFilter === 'all' ? 'active' : ''}
+                onClick={handleFilterClick}
+                className="active"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
             >
@@ -26,8 +31,8 @@ const FilterBar = ({ filters, activeFilter, onFilterChange }) => {
             {filters.map((filter) => (
                 <FilterButton
                     key={filter}
-                    onClick={() => onFilterChange(filter)}
-                    className={activeFilter === filter ? 'active' : ''}
+                    onClick={handleFilterClick}
+                    className=""
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
@@ -53,7 +58,7 @@ const FilterContainer = styled.div`
 const FilterButton = styled(motion.button)`
     background: transparent;
     color: white;
-    border: 2px solid #00BCD4;
+    border: 2px solid #9b59b6;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     font-size: 1rem;
@@ -66,7 +71,7 @@ const FilterButton = styled(motion.button)`
     }
 
     &.active {
-        background: #00BCD4;
+        background: #9b59b6;
         color: #1b1b1b;
         font-weight: bold;
     }

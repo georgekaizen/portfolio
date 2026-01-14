@@ -14,7 +14,7 @@ export const experienceData = {
     title: "Software Engineering Manager",
     tagline: "Leading teams to deliver quality software with DevOps excellence",
     hero: {
-      image: "/images/expertise/engineering-manager.png",
+      image: "/images/appium.png",
       summary: "I am an accomplished IT professional with 7 years of experience in Software Engineering, DevOps, Quality Assurance, and team management. Skilled in Docker, Kubernetes, and CI/CD, I lead and mentor engineering teams to achieve objectives and ensure software quality. As an Engineering Manager, I drive performance and foster continuous improvement.",
       keyPoints: [
         "Led teams of 8-12 engineers with 90% retention rate",
@@ -161,7 +161,7 @@ export const experienceData = {
     title: "Senior QA Engineer",
     tagline: "Expert in Manual, Automation & Performance Testing",
     hero: {
-      image: "/images/expertise/qa-engineer.png",
+      image: "/images/appium.png",
       summary: "Comprehensive QA expertise spanning manual testing, automation frameworks (Selenium, Appium, Robot Framework, Playwright), and performance testing (JMeter, K6). Proven track record of 90% test coverage increase and 70% regression testing time reduction.",
       keyPoints: [
         "95% test automation coverage across web and mobile platforms",
@@ -358,7 +358,7 @@ export const experienceData = {
     title: "Python/Java API & ETL Developer",
     tagline: "Building robust APIs and scalable ETL pipelines",
     hero: {
-      image: "/images/expertise/api-developer.png",
+      image: "/images/ETL_process.png",
       summary: "Full-stack development expertise specializing in backend API development with Python and Java. Experience building microservices, RESTful APIs, and ETL pipelines that process 50K+ daily transactions with 75% deployment time reduction.",
       keyPoints: [
         "50K+ daily transactions processed through custom APIs",
