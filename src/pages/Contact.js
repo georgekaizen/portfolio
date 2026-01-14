@@ -41,7 +41,7 @@ const Contact = () => {
                     <Hide>
                         <Social variants = { titleAnim }>
                             <Circle />
-                            <a href="https://www.linkedin.com/in/george-njau-522694145/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/george-njau-ngugi/" target="_blank" rel="noopener noreferrer">
                                 <h2>LinkedIn Profile</h2>
                             </a>
                         </Social>
@@ -111,7 +111,7 @@ const Social = styled(motion.div)`
         color: white;
         transition: color 0.3s ease;
         &:hover {
-            color: #00BCD4;
+            color: #9b59b6;
         }
     }
 `

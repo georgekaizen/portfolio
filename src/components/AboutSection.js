@@ -98,9 +98,104 @@ const AboutSection = () => {
           </StyledCard>
         </StyledCards>
       </CoreCompetenciesSection>
+
+      <ResumeSection>
+        <h2>Download <span>Resume</span></h2>
+        <ResumeCards>
+          <ResumeCard>
+            <h3>Senior QA Engineer</h3>
+            <p>8+ years in QA leadership, test automation, and quality strategy</p>
+            <DownloadButton
+              href={process.env.PUBLIC_URL + "/George_Njau_Senior_QA_Engineer_Resume.pdf"}
+              download="George_Njau_Senior_QA_Engineer_Resume.pdf"
+            >
+              Download PDF
+            </DownloadButton>
+          </ResumeCard>
+          <ResumeCard>
+            <h3>Data Scientist</h3>
+            <p>MSc Data Science, ETL pipelines, Python analytics & ML</p>
+            <DownloadButton
+              href={process.env.PUBLIC_URL + "/George_Njau_Data_Scientist_Resume.pdf"}
+              download="George_Njau_Data_Scientist_Resume.pdf"
+            >
+              Download PDF
+            </DownloadButton>
+          </ResumeCard>
+        </ResumeCards>
+      </ResumeSection>
     </>
   );
 };
+
+const ResumeSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 10rem;
+  color: white;
+
+  h2 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+
+    span {
+      color: #9b59b6;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+`;
+
+const ResumeCards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+`;
+
+const ResumeCard = styled.div`
+  background: rgba(155, 89, 182, 0.1);
+  border: 2px solid #9b59b6;
+  border-radius: 15px;
+  padding: 2rem 3rem;
+  text-align: center;
+  min-width: 280px;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #9b59b6;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+  }
+`;
+
+const DownloadButton = styled.a`
+  display: inline-block;
+  background: #9b59b6;
+  color: #1b1b1b;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: white;
+    color: #9b59b6;
+  }
+`;
 
 const CoreCompetenciesSection = styled.div`
   min-height: 50vh;
